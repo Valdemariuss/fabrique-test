@@ -1,0 +1,27 @@
+.layout-aside {
+  display: grid;
+  grid-template-columns: 269px 1fr;
+  grid-column-gap: 40px;
+  grid-template-rows: 1fr;
+  grid-row-gap: 0;
+  grid-template-areas: "aside__aside aside__content";
+  min-height: 100vh;
+  padding: 0;
+  margin: 0 auto;
+
+  &__aside {
+    grid-area: "aside__aside";
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    margin: 0;
+    border-right: 1px solid #ccc;
+  }
+
+  &__content {
+    grid-area: "aside__content";
+    display: block;
+    padding: 20px 30px 20px 0;
+    margin: 0;
+  }
+}
